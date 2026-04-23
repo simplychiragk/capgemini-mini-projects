@@ -32,3 +32,14 @@ A basic library system using dictionaries for structured data:
 - Track availability and user interactions  
 
 ---
+
+
+---
+
+## 🚀 How to Run
+
+1. Navigate to any project folder:
+```bash
+cd ATM
+python main.py
+```
