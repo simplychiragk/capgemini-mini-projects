@@ -1,0 +1,6 @@
+ PROJECT 1: ATM Simulation
+Functions to include:  
+- Display Balance  
+- Withdraw Money  
+- Deposit Money  
+- Statement (transaction record)  

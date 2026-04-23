@@ -1,0 +1,36 @@
+from utils import choices
+import computer_choice
+import user_choice
+import intro
+import game_service
+
+def sps():
+    intro.intro()
+    
+    while True:
+        
+        user = user_choice.user_choice()
+
+        if user == "exit":
+            print("\n👋 Thanks for playing!")
+            break
+
+        computer = computer_choice.computer_choice()
+        
+        print(f"\n🧍 You chose: {user}")
+        print(f"🤖 Computer chose: {computer}")
+        
+        result = game_service.check_winner(user, computer)
+
+        if result == "tie":
+            print("🤝 It's a tie!")
+
+        elif result == "win":
+            print("🔥 YOU WIN!")
+
+        else:
+            print("💀 You lose!")
+
+        print()  # spacing
+
+sps()

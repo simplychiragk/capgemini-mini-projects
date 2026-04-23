@@ -1,0 +1,12 @@
+🎮 PROJECT 2: Simple Game
+Choose one option:  
+- Stone–Paper–Scissors (THIS)
+- Dice Roll Game  
+
+Requirements:  
+- Use functions for game logic  
+- Generate random results using the random module  
+- Run via menu-driven system  
+- Display winner/result after each round 
+
+functions - SPS() ; print(sps.random) ; sps = [Stone, Paper, Scissors] ; choice
