@@ -1,3 +1,4 @@
+import transactions
 import balance
 import withdraw
 import deposit
@@ -9,7 +10,8 @@ def atm():
         print("1. Check Balance")
         print("2. Withdraw")
         print("3. Deposit")
-        print("4. Exit")
+        print("4. View Transactions")
+        print("5. Exit")
         print()
 
         option = input("Enter your choice: ")
@@ -24,8 +26,11 @@ def atm():
             deposit.deposit()
 
         elif option == '4':
+            transactions.display_transactions()
+            
+        elif option == '5':
             print("Thank you for using the ATM. Goodbye!")
-            break  # THIS is what actually exits
+            break  
 
         else:
             print("Invalid option. Try again.")
